@@ -1739,5 +1739,6 @@ section,
 @media (max-width: 576px) {
   .header .logo img {
     max-height: 65px;
+    width: 200px !important;
   }
 }
