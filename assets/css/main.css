@@ -1741,4 +1741,8 @@ section,
     max-height: 65px;
     width: 200px !important;
   }
+
+  .btn-width{
+    width: 141px !important;
+  }
 }
