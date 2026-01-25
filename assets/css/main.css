@@ -78,10 +78,10 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
 }
 
 a {
@@ -1778,17 +1778,22 @@ Newsletter
   background: #222;
 }
 
-.book-card-shadow:hover{
+.book-card-shadow:hover {
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
 }
 
-#podcast .row .card .newsletter-form{
+#podcast .row .card .newsletter-form {
   display: none;
 }
-#podcast .row .card:hover .newsletter-form{
+
+#podcast .row .card:hover .newsletter-form {
   display: block;
   justify-content: center;
   align-items: center;
+}
+
+.custom-border {
+  border-right: 1px solid gray;
 }
 
 @media (max-width: 768px) {
@@ -1813,5 +1818,11 @@ Newsletter
 
   .hero {
     min-height: 100vh;
+  }
+
+  .custom-border {
+    border-right: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
   }
 }
